@@ -25,10 +25,7 @@ jobs:
       # As you can see below we are using matrix.node-version => it means it will execute for all possible combinations
       # provided matrix keys array(in our case only one kye => node-version)
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{  }}
-        uses: actions/setup-node@v1.4.3
-        with:
-          node-version: ${{  }}
+      
       # Install the node modules
       - name: NPM Install
         run: npm install
